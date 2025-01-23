@@ -15,7 +15,11 @@ git clone https://github.com/petejohanson/cirque-input-module ~/Development/gith
 ### then Build
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install west
 cd ~/Development/github/zmkfirmware/zmk/app
+
 west build -p -b nice_nano_v2 -- -DSHIELD=raveniung -DZMK_EXTRA_MODULES="/home/spiff/Development/github/petejohanson/cirque-input-module;/home/spiff/Development/github/FearlessSpiff/raveniung-zmk-config"
 
 ```
