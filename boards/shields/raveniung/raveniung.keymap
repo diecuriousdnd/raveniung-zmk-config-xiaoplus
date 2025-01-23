@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
 #include "keymap_german.h"
 
@@ -19,7 +20,7 @@
 #define NUM     3
 #define FN      4
 #define SET     5
-#define MDA     6
+#define MSE     6
 #define SPCL    7
 
 // Mac
@@ -38,7 +39,7 @@
 #define DEL_W        &kp LC(BSPC)
 #define SPACE_SYM    &lt SYM SPACE
 #define SPACE_H_SYM  &lt H_SYM SPACE
-#define J_MDA        &lt MDA J
+#define J_MSE        &lt MSE J
 #define C_NAV        &lt NAV C
 #define C_M_NAV      &lt M_NAV C
 #define BSPC_LGUI    &hm LGUI BSPC
@@ -264,7 +265,7 @@
         default_layer {
             bindings = <
                                  &kp L  &kp U        &kp A        &kp Q                 &kp W      &kp B      &kp D      &kp G
-               J_MDA      C_NAV  ALT_R  CTL_I        SFT_E        &kp O                 &kp M      SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
+               J_MSE      C_NAV  ALT_R  CTL_I        SFT_E        &kp O                 &kp M      SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
                &kp DE_SS  GUI_V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA           &kp P      &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
                                                      &mo NUM      &kp LSHFT             SPACE_SYM  BSPC_LGUI 
              >;
@@ -320,12 +321,12 @@
             >;
         };
 
-        media_layer {
+        mouse_layer {
             bindings = <
-                                    &kp C_PREV      &kp C_PP      &kp C_NEXT    ________          ________  ________  ________  ________
-                ________  ________  &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP  ________          ________  ________  ________  ________  ________  ________
-                ________  ________  &kp C_BRI_AUTO  &kp C_BRI_DN  &kp C_BRI_UP  ________          ________  ________  ________  ________  ________  ________
-                                                                  ________      ________          ________  ________
+                                   &mkp MB4   ________   &mkp MB5   ________          ________  &kp C_PREV      &kp C_PP      &kp C_NEXT
+                ________ ________  &mkp RCLK  &mkp MCLK  &mkp LCLK  ________          ________  &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP  ________  ________
+                ________ ________  ________   ________   ________   ________          ________  &kp C_BRI_AUTO  &kp C_BRI_DN  &kp C_BRI_UP  ________  ________
+                                                         ________   ________          ________  ________
             >;
         };
 
@@ -349,7 +350,7 @@
         mac_default_layer {
             bindings = <
                                     &kp L  &kp U        &kp A        &kp Q                    &kp W        &kp B     &kp D      &kp G
-                J_MDA      C_M_NAV  ALT_R  CMD_I        SFT_E        &kp O                    &kp M        SFT_N     CMD_T      RALT_S   LALT_H  &kp DE_Z
+                J_MSE      C_M_NAV  ALT_R  CMD_I        SFT_E        &kp O                    &kp M        SFT_N     CMD_T      RALT_S   LALT_H  &kp DE_Z
                 &kp DE_SS  CTL_V    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA              &kp P        &kp F     &kp COMMA  &kp DOT  CTL_K   &kp DE_Y
                                                         &mo M_NUM    &kp LSHFT                SPACE_SYM    &kp BSPC
              >;
@@ -384,7 +385,7 @@
         hrz_default_layer {
             bindings = <
                                     &kp L  &kp U        &kp A        &kp Q                   &kp W        &kp B      &kp D      &kp G
-                J_MDA      C_NAV    ALT_R  CTL_I        SFT_E        &kp O                   &kp M        SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
+                J_MSE      C_NAV    ALT_R  CTL_I        SFT_E        &kp O                   &kp M        SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
                 &kp DE_SS  GUI_V    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA             &kp P        &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
                                                         &mo NUM      &kp LSHFT               SPACE_H_SYM  BSPC_LGUI
              >;
