@@ -110,18 +110,6 @@
                 ;
         )
 
-  	    ZMK_MACRO(cad,
-            wait-ms = <30>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press   &kp LCTL>
-                , <&macro_press   &kp LALT>
-                , <&macro_tap     &kp DEL>
-                , <&macro_release &kp LALT>
-                , <&macro_release &kp LCTL>
-                ;
-        )
-
         ZMK_MACRO(lck,
             wait-ms = <30>;
             tap-ms = <40>;
