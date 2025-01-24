@@ -38,9 +38,3 @@ cirque_spi: &spi0 {
         no-taps;
     };
 };
-/ {
-    glidepoint_listener {
-        compatible = "zmk,input-listener";
-        device = <&glidepoint>;
-    };
-};
