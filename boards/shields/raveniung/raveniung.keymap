@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <input/processors.dtsi>
@@ -325,10 +324,10 @@
 
         settings_layer {
             bindings = <
-                                    ________      ________  ________  BT_CLEAR                  ________  &to DEF   &to M_DEF  ________
-                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________                  ________  &to_ip60  BT_5    BT_6       ________   ________
-                TODO  ________      ________      ________  ________  &ext_power EP_ON          ________  &to_x1    &to_nca    &to_scd    &to_devvm  TODO
-                                                            ________  ________                  ________  ________
+                                    ________      ________  ________  BT_CLEAR          ________  &to DEF   &to M_DEF  ________
+                TODO  &out OUT_USB  &out OUT_BLE  ________  ________  ________          ________  &to_ip60  BT_5    BT_6       ________   ________
+                TODO  ________      ________      ________  ________  ________          ________  &to_x1    &to_nca    &to_scd    &to_devvm  TODO
+                                                            ________  ________          ________  ________
             >;
         };
 
