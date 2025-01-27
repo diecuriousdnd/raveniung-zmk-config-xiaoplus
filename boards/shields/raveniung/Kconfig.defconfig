@@ -4,6 +4,6 @@
 if SHIELD_RAVENIUNG
 
 config ZMK_KEYBOARD_NAME
-    default "Raveniung"
+    default "raveniung"
 
 endif
