@@ -245,14 +245,20 @@
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 20>;
+            key-positions = <9 21>;
             bindings = <&kp TAB>;
         };
 
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <19 29>;
+            key-positions = <18 30>;
             bindings = <&kp RET>;
+        };
+        
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <8 20>;
+            bindings = <&kp ESC>;
         };
 
     };
