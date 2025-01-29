@@ -55,7 +55,6 @@
 #define C_NAV        &lt NAV C
 #define C_M_NAV      &lt M_NAV C
 #define C_H_NAV      &lt H_NAV C
-#define BSPC_LGUI    &hm LGUI BSPC
 #define EXT_ON       &ext_power EP_ON
 #define SCRL_D       &msc SCRL_DOWN
 #define SCRL_U       &msc SCRL_UP
@@ -303,7 +302,7 @@
                                  &kp L  &kp U        &kp A        &kp Q                 &kp W      &kp B      &kp D      &kp G
                J_MSE      C_NAV  ALT_R  CTL_I        SFT_E        &kp O                 &kp M      SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
                &kp DE_SS  GUI_V  &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA           &kp P      &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
-                                                     &mo NUM      &kp LSHFT             SPACE_SYM  BSPC_LGUI 
+                                                     &mo NUM      &kp LSHFT             SPACE_SYM  &kp BSPC
              >;
         };
 
@@ -432,9 +431,9 @@
         hrz_default_layer {
             bindings = <
                                     &kp L  &kp U        &kp A        &kp Q                   &kp W        &kp B      &kp D      &kp G
-                J_MSE      C_H_NAV    ALT_R  CTL_I        SFT_E        &kp O                   &kp M        SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
+                J_MSE      C_H_NAV  ALT_R  CTL_I        SFT_E        &kp O                   &kp M        SFT_N      CTL_T      RALT_S   LALT_H  &kp DE_Z
                 &kp DE_SS  GUI_V    &kp X  &kp DE_UDIA  &kp DE_ADIA  &kp DE_ODIA             &kp P        &kp F      &kp COMMA  &kp DOT  LGUI_K  &kp DE_Y
-                                                        &mo H_NUM      &kp LSHFT               SPACE_H_SYM  BSPC_LGUI
+                                                        &mo H_NUM    &kp LSHFT               SPACE_H_SYM  &kp BSPC
              >;
         };
 
@@ -498,10 +497,10 @@
 
         mouse_layer {
             bindings = <
-                                   &mkp MB4   SCRL_U     &mkp MB5   ________          ________  &kp C_PREV      &kp C_PP      &kp C_NEXT
-                ________ ________  &mkp RCLK  SCRL_D     &mkp LCLK  ________          ________  &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP  ________  ________
-                ________ ________  ________   &mkp MCLK  &mo SCRL   ________          ________  &kp C_BRI_AUTO  &kp C_BRI_DN  &kp C_BRI_UP  ________  ________
-                                                         ________   ________          ________  ________
+                                   &mkp MB4   &mo SCRL   &mkp MB5   ________          ________  &kp C_PREV      &kp C_PP      &kp C_NEXT
+                ________ ________  &mkp RCLK  &mkp MCLK  &mkp LCLK  ________          ________  &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP  ________  ________
+                ________ ________  ________   ________   ________   ________          ________  &kp C_BRI_AUTO  &kp C_BRI_DN  &kp C_BRI_UP  ________  ________
+                                                         &kp LCTRL  &kp LSHFT         ________  ________
             >;
         };
 
