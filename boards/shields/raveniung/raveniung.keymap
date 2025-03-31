@@ -43,9 +43,9 @@
 #define GME     18
 
 // Global
-#define MSE     18
-#define SPCL    19
-#define SCRL    20
+#define MSE     19
+#define SPCL    20
+#define SCRL    21
 
 // Special shortcuts
 #define ________     &trans
