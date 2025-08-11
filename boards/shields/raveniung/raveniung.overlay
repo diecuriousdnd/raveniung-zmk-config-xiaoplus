@@ -6,7 +6,9 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-
+&physical_layout0 {
+    transform = <&matrix_transform0>;
+};
 
 / {
     chosen {
