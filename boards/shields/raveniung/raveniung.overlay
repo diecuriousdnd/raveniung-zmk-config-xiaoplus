@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "raveniung-layouts.dtsi"
 
 &physical_layout0 {
     transform = <&matrix_transform0>;
